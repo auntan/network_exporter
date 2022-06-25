@@ -1,4 +1,4 @@
-# network_exporter
+# Network exporter
 Exporter that provides network conditions as metrics for prometheus
 
 ## Ping
