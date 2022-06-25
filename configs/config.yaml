@@ -1,0 +1,62 @@
+http_port: 8814
+
+ping_interval: 1s
+
+logs_env: dev
+
+histogram_buckets: [
+  .0001, .0002, .0003, .0004, .0005, .0006, .0007, .0008, .0009,
+  .001, .002, .003, .004, .005, .006, .007, .008, .009,
+  .01, .025, .05,
+  .1, .25, .5,
+  1,
+]
+
+host_id: host_0
+
+probes:
+  probe_a:
+    host: service_a # host_0 host_1
+    targets: [ service_c, service_d ] # host_3, host_4; host_3, host_4
+
+  probe_b:
+    host: service_b # host_0, host_1
+    targets: [ service_c, service_e ] # host_3, host_4; host_3, host_4, host_5
+
+deployments:
+  service_a:
+    hosts:
+      host_0:
+        address: localhost
+      host_1:
+        address: localhost
+
+  service_b:
+    hosts:
+      host_0:
+        address: localhost
+      host_1:
+        address: localhost
+
+  service_c:
+    hosts:
+      host_3:
+        address: localhost
+      host_4:
+        address: localhost
+
+  service_d:
+    hosts:
+      host_3:
+        address: localhost
+      host_4:
+        address: localhost
+
+  service_e:
+    hosts:
+      host_3:
+        address: localhost
+      host_4:
+        address: localhost
+      host_5:
+        address: localhost
