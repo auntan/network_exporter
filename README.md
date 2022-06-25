@@ -56,5 +56,5 @@ probes:
 
 `recv_packets_total`: Total received packets
 
-### Calculation loss
+### Calculating packet loss
 Packet loss percent can be calculated as `((sent_packets_total - recv_packets_total) / sent_packets_total) * 100`
