@@ -50,11 +50,11 @@ probes:
 ```
 
 ## Provided metrics
-`rtt_seconds`: Round trip time from source to target
+`network_exporter_rtt_seconds`: Round trip time from source to target
 
-`sent_packets_total`: Total sent packets from source to target
+`network_exporter_sent_packets_total`: Total sent packets from source to target
 
-`recv_packets_total`: Total received packets
+`network_exporter_recv_packets_total`: Total received packets
 
 ### Calculating packet loss
 Packet loss percent can be calculated as `((sent_packets_total - recv_packets_total) / sent_packets_total) * 100`
