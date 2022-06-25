@@ -1,3 +1,5 @@
+[![Go](https://github.com/auntan/network_exporter/actions/workflows/go.yml/badge.svg)](https://github.com/auntan/network_exporter/actions/workflows/go.yml)
+
 # Network exporter
 Exporter that provides network conditions as metrics for prometheus
 
