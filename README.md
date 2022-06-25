@@ -4,6 +4,7 @@
 Exporter that provides network conditions as metrics for prometheus
 
 ## Ping
+Measure round trip time and packet loss using ICMP pings
 
 ### Describing deployments
 Deployment is something that is deployed on one or many hosts
